@@ -2,6 +2,8 @@
 ---
 ### Caio Villela
 
+## Model Training Notebook
+---
 This repository contains a Jupyter notebook for training two LGBM models to classify between B2B and B2C companies using the dataset in data.csv. The notebook also saves scalers and models used for the inference API and contains detailed explanations.
 
 The notebook was trained using a Google Colab PRO environment with GPU acceleration.
@@ -20,7 +22,7 @@ The repository also includes a Flask API `app.py` that runs a localhost server a
 The output is of the format `{'prediction_b2c': int, 'prediction_b2b': int}`, where int can be 1 or 0 for True or False predictions on each category.
 <br>
 <br>
-## Installation
+### Installation
 To install the necessary packages, run:
 ```
 pip install -r requirements.txt
@@ -28,7 +30,7 @@ pip install -r requirements.txt
 
 It is recommended to use a virtual environment.
 
-## BART Model
+### BART Model
 For zero-shot classification and feature extraction from text contained in the POST request's body, we used Facebook's BART model. To use a downloaded BART model, it should be under a `bart-classifier` directory in the project directory. Run `python app.py --load_pretrained_bart True` to use the downloaded model. If the `--load_pretrained_bart` flag is not specified, the model will be downloaded at runtime.
 
 Note that the model is large, and if the code were in production, it should be hosted on a different server. The model can be manually downloaded at https://huggingface.co/facebook/bart-large-mnli/tree/main, and the bart-classifier directory must contain the following files:
@@ -44,5 +46,5 @@ Note that the model is large, and if the code were in production, it should be h
 ```
 We recommend using GPU-ready hardware for inference.
 
-Testing
-The repository also includes a script for testing POST requests to the Flask app at `http://localhost:5000/predict`. The script takes dataframe rows at random and outputs the actual value for the company categories and the predicted values.
+### Testing
+The repository also includes a script for testing POST requests to the Flask app at `http://localhost:5000/predict`. The script takes dataset rows at random and outputs the actual value for the company categories and the predicted values.
