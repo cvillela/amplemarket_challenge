@@ -47,3 +47,9 @@ We recommend using GPU-ready hardware for inference.
 
 ### Testing
 The repository also includes a script for testing POST requests to the Flask app at `http://localhost:5000/predict`. The script takes dataset rows at random and outputs the actual value for the company categories and the predicted values.
+
+### Note
+
+Please note that this is a development repository and not ready for production. It lacks certain features like logging, dockerization and prints outputs for better understanding of the inference process.
+
+
