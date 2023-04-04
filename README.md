@@ -1,9 +1,8 @@
 # Amplemarket's Machine Learning Engineer Challenge
----
 ### Caio Villela
 
 ## Model Training Notebook
----
+
 This repository contains a Jupyter notebook for training two LGBM models to classify between B2B and B2C companies using the dataset in data.csv. The notebook also saves scalers and models used for the inference API and contains detailed explanations.
 
 The notebook was trained using a Google Colab PRO environment with GPU acceleration.
