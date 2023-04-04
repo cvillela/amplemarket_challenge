@@ -3,7 +3,7 @@
 
 ## Model Training Notebook
 
-This repository contains a Jupyter notebook for training two LGBM models to classify between B2B and B2C companies using the dataset in data.csv. The notebook also saves scalers and models used for the inference API and contains detailed explanations.
+This repository contains a Jupyter notebook for training two LGBM models to classify between B2B and B2C companies using the dataset in data.csv. The notebook also saves scalers and models used for the inference API and contains detailed explanations on model training, techniques, and methodology used for the classification task, as well as visualizations and analysis of the dataset. The notebook also provides insights into the performance of the trained models, using multiple evaluation metrics. Additionally, it includes step-by-step instructions on how to preprocess the data, train the models, and save the models and scalers for use in the inference API. .
 
 The notebook was trained using a Google Colab PRO environment with GPU acceleration.
 <br>
